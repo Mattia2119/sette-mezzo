@@ -8,7 +8,7 @@ public class Player {
 	//VARIBILI D'ISTANZA
 	private List<Card> hand = new ArrayList<>();
 	private String name;
-	//private boolean status;
+	private boolean sballato = false;
 	
 	
 	//COSTRUTTORI
@@ -22,6 +22,10 @@ public class Player {
 	
 	public String getName() {
 		return name;
+	}
+	
+	public void setSballato(boolean sballato) {
+		this.sballato = sballato;
 	}
 
 	public void addCard(Card card) {
